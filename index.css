@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.head {
+    width: 100%;
+    height: 100vh;
+    background:url(background.webp) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.logo {
+    cursor: pointer;
+    height: 100px;
+    width: 150px;
+    margin-left: 50px;
+}
+.navbar {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.s1,.t1 {
+    color: #fbfcfd;
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.content {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+}
+.sidebar{
+    background: linear-gradient(107deg,#0c8eae 0%, #000729 80%);
+    width: 50px;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.useful-link img, .social-link img {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+.menu {
+    width: 25px;
+    margin: 40px auto 0;
+    margin-left: 10px;
+}
+.social-link {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.useful-link {
+    position: absolute;
+    bottom: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+.bubbles img{
+    width: 50px;
+    animation: sample 7s linear infinite;
+}
+.bubbles {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+@keyframes sample {
+    
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 1;
+        }
+        70%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+            transform: translateY(-90vh);
+        }
+    
+}
+.bubbles img:nth-child(1) {
+    animation-delay: 1.5s;
+    width: 40px;
+}
+.bubbles img:nth-child(2) {
+    animation-delay: 3s;
+    width: 25px;
+}
+.bubbles img:nth-child(3) {
+    animation-delay: 5s;
+    width: 60px;
+}
+.bubbles img:nth-child(4) {
+    animation-delay: 3s;
+    width: 25px;
+}
+.bubbles img:nth-child(5) {
+    animation-delay: 5.5s;
+    width: 60px;
+}
+.bubbles img:nth-child(6) {
+    animation-delay: 1.5s;
+    width: 40px;
+}
+.bubbles img:nth-child(7) {
+    animation-delay: 7s;
+    width: 30px;
+}
+.fish img {
+    width: 150px;
+    height: 100px;
+    animation: fis 7s linear infinite;
+}
+.fish .f1 {
+    position: absolute;
+    top: 200px;
+    left: -100px;
+    animation-delay: 2s;
+}
+.fish .f2 {
+    position: absolute;
+    top: 270px;
+    left: -200px;
+    animation-delay: 4s;
+    width: 100px;
+    height: 75px;
+}
+.fish .f3 {
+    position: absolute;
+    top: 300px;
+    left: -200px;
+    animation-delay: 5s;
+    width: 75px;
+    height: 50px;
+}
+.fish .f4 {
+    position: absolute;
+    top: 50px;
+    left: -200px;
+    animation-delay: 3s;
+}
+@keyframes fis {
+    0%{
+        transform: translateX(0);
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(2100px);
+    }
+}
+@media screen and (max-width:600px)
+{
+    .head {
+        width: 100%;
+        height: 100vh;
+        background:url('https://wallpapercave.com/wp/wp868040.jpg') ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    } 
+    .content {
+        color: lightgreen;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 30px;
+    }
+    .t1 {
+        
+            color: #fbfcfd;
+            padding: 10px 25px;
+            background: transparent;
+            border: 1px solid;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-left: 30px;
+        
+    } 
+    .sidebar{
+        background: linear-gradient(107deg,#0c8eae 0%, #000729 80%);
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 10px;
+        box-sizing: border-box;
+    } 
+    .menu {
+        width: 18px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+    .social-link {
+        width: auto;
+        position: unset;
+        text-align: center;
+        transform: none;
+        
+    }
+    .useful-link {
+        position: unset;
+        width: auto;
+
+    }
+    @media screen and (max-width:600px) and (min-width:450px)
+    {
+        .head {
+            width: 100%;
+            height: 100vh;
+            background:url('https://wallpapercave.com/wp/wp2599594.jpg') ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }           
+    }
+
+}
